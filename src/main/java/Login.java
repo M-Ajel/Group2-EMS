@@ -19,12 +19,12 @@ public class Login implements ActionListener {
     private JTextField txtfldUsername = new JTextField();
     private JPasswordField psswrdfldPassword = new JPasswordField();
     private JButton btnLogIn, btnReset;
-    private JTextArea txtareaLoginResults = new JTextArea();
+   
 
     
     Login(){
     
-    f.setSize(500, 600);
+    f.setSize(450, 300);
     f.setLayout(null);
     f.setDefaultCloseOperation(f.EXIT_ON_CLOSE);
     
@@ -43,23 +43,18 @@ public class Login implements ActionListener {
     psswrdfldPassword.setFont(new Font("Arial", Font.PLAIN, 15));
     
     btnLogIn = new JButton("LogIn");
-    btnLogIn.setBounds(20, 150, 100, 30);
+    btnLogIn.setBounds(30, 150, 100, 30);
     btnLogIn.setFont(new Font("Arial Black", Font.PLAIN, 15));
     btnLogIn.addActionListener(this);
    
     btnReset = new JButton("Clear");
-    btnReset.setBounds(130, 150, 100, 30);
+    btnReset.setBounds(160, 150, 100, 30);
     btnReset.setFont(new Font("Arial Black", Font.PLAIN, 15));
     btnReset.addActionListener(this);
     
     lblLoginResults = new JLabel("");
     lblLoginResults.setBounds(20, 200, 480, 30);
     lblLoginResults.setFont(new Font("Arial", Font.PLAIN, 15));
-    
-    txtareaLoginResults.setBounds(20, 300, 400, 200);
-    txtareaLoginResults.setFont(new Font("Arial", Font.PLAIN, 15));  
-    txtareaLoginResults.setEditable(false);
-    txtareaLoginResults.setLineWrap(true);
     
     f.add(lblUsername);
     f.add(lblPassword);
@@ -68,7 +63,7 @@ public class Login implements ActionListener {
     f.add(btnLogIn);
     f.add(btnReset);
     f.add(lblLoginResults);
-    f.add(txtareaLoginResults);
+    
    
     f.setVisible(true);
     f.setResizable(false);
@@ -81,13 +76,13 @@ public class Login implements ActionListener {
         if(e.getSource() == btnLogIn){
            String username = txtfldUsername.getText();
            String password = psswrdfldPassword.getText();
-           lblLoginResults.setText("HALA! MAY BUKOL KA!");
-           txtareaLoginResults.setText("Your username is: "+username+"\nPassword is: "+password);
+           lblLoginResults.setText("");
+           
         }else if(e.getSource() == btnReset){
            txtfldUsername.setText("");
            psswrdfldPassword.setText("");
            lblLoginResults.setText("");
-           txtareaLoginResults.setText("");         
+            
         }
         
     }
