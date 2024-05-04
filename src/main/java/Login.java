@@ -30,34 +30,34 @@ public class Login implements ActionListener {
     
     lblUsername = new JLabel("Username:");
     lblUsername.setBounds(20, 50, 120, 30);
-    lblUsername.setFont(new Font("Castellar", Font.BOLD, 15));
+    lblUsername.setFont(new Font("Arial Black", Font.BOLD, 15));
     
     lblPassword = new JLabel("Password:");
     lblPassword.setBounds(20, 100, 120, 30);
-    lblPassword.setFont(new Font("Castellar", Font.BOLD, 15));
+    lblPassword.setFont(new Font("Arial Black", Font.BOLD, 15));
     
     txtfldUsername.setBounds(140, 50, 100,30);
-    txtfldUsername.setFont(new Font("Castellar", Font.PLAIN, 15));
+    txtfldUsername.setFont(new Font("Arial", Font.PLAIN, 15));
     
     psswrdfldPassword.setBounds(140, 100, 100,30);
-    psswrdfldPassword.setFont(new Font("Castellar", Font.PLAIN, 15));
+    psswrdfldPassword.setFont(new Font("Arial", Font.PLAIN, 15));
     
     btnLogIn = new JButton("LogIn");
     btnLogIn.setBounds(20, 150, 100, 30);
-    btnLogIn.setFont(new Font("Castellar", Font.PLAIN, 15));
+    btnLogIn.setFont(new Font("Arial Black", Font.PLAIN, 15));
     btnLogIn.addActionListener(this);
    
     btnReset = new JButton("Clear");
     btnReset.setBounds(130, 150, 100, 30);
-    btnReset.setFont(new Font("Castellar", Font.PLAIN, 10));
+    btnReset.setFont(new Font("Arial Black", Font.PLAIN, 15));
     btnReset.addActionListener(this);
     
     lblLoginResults = new JLabel("");
     lblLoginResults.setBounds(20, 200, 480, 30);
-    lblLoginResults.setFont(new Font("Castellar", Font.PLAIN, 15));
+    lblLoginResults.setFont(new Font("Arial", Font.PLAIN, 15));
     
     txtareaLoginResults.setBounds(20, 300, 400, 200);
-    txtareaLoginResults.setFont(new Font("Castellar", Font.PLAIN, 15));  
+    txtareaLoginResults.setFont(new Font("Arial", Font.PLAIN, 15));  
     txtareaLoginResults.setEditable(false);
     txtareaLoginResults.setLineWrap(true);
     
