@@ -1,3 +1,5 @@
+package HRStaff;
+import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.*;
 import javax.swing.*;
@@ -14,7 +16,7 @@ public class HRStaff implements ActionListener {
     
     private JLabel lblEmployeeManagement;
     private JFrame f = new JFrame("HR Staff");
-    private JButton btnEmployeeRecords, btnJobDetail, btnPerformanceRecord, btnEmployeeRequest;
+    private JButton btnEmployeeRecords, btnJobDetail, btnPerformanceRecord, btnEmployeeRequest, btnAddEm, btnLogout;
    
     HRStaff(){
     
@@ -46,12 +48,25 @@ public class HRStaff implements ActionListener {
     btnEmployeeRequest.setFont(new Font("Arial Black", Font.PLAIN, 15));
     btnEmployeeRequest.addActionListener(this);
     
+    btnAddEm = new JButton("Add Employee");
+    btnAddEm.setBounds(290,250, 200, 40);
+    btnAddEm.setFont(new Font("Arial Black", Font.PLAIN, 15));
+    btnAddEm.addActionListener(this);
+    
+    btnLogout = new JButton("Log out");
+    btnLogout.setBounds(550,350, 200, 30);
+    btnLogout.setBackground(Color.BLACK);
+    btnLogout.setForeground(Color.WHITE);
+    btnLogout.setFont(new Font("Arial Black", Font.PLAIN, 15));
+    btnLogout.addActionListener(this);
     
     f.add(btnEmployeeRecords);
     f.add(btnJobDetail);
     f.add(btnPerformanceRecord);
     f.add(btnEmployeeRequest);
     f.add(lblEmployeeManagement);
+    f.add(btnLogout);
+    f.add(btnAddEm);
     
     f.setVisible(true);
     f.setResizable(false);
