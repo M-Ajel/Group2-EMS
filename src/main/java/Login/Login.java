@@ -2,7 +2,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-
+package Login;
+import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.*;
 import javax.swing.*;
@@ -43,11 +44,15 @@ public class Login implements ActionListener {
     
     btnLogIn = new JButton("LogIn");
     btnLogIn.setBounds(30, 150, 100, 30);
+    btnLogIn.setBackground(Color.BLACK);
+    btnLogIn.setForeground(Color.WHITE);
     btnLogIn.setFont(new Font("Arial Black", Font.PLAIN, 15));
     btnLogIn.addActionListener(this);
    
     btnReset = new JButton("Clear");
     btnReset.setBounds(160, 150, 100, 30);
+    btnReset.setBackground(Color.BLACK);
+    btnReset.setForeground(Color.WHITE);
     btnReset.setFont(new Font("Arial Black", Font.PLAIN, 15));
     btnReset.addActionListener(this);
     
